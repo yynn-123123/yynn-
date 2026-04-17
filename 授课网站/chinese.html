@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中语文 - 智慧家教</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .subject-header {
+            background: url('网页背景图.png');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: #fff;
+            margin-top: 70px;
+        }
+        
+        .subject-header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subject-header p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .teacher-section {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .teacher-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .teacher-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .teacher-info h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .teacher-info h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .teacher-info p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        .teacher-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .teacher-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .achievements-section {
+            padding: 100px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .achievement-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .achievement-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .achievement-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .achievement-content {
+            padding: 20px;
+        }
+        
+        .achievement-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .achievement-content p {
+            color: #666;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #2980b9;
+        }
+        
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>智慧家教</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="index.html#about">工作室介绍</a></li>
+                <li><a href="index.html#services">家教服务</a></li>
+                <li><a href="index.html#news">家教资讯</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 学科头部 -->
+    <section class="subject-header">
+        <div class="container">
+            <h1>高中语文</h1>
+            <p>专业的高中语文辅导，帮助学生提高语文素养，掌握阅读和写作技巧</p>
+        </div>
+    </section>
+
+    <!-- 名师风采 -->
+    <section class="teacher-section">
+        <div class="container">
+            <h2 class="section-title">名师风采</h2>
+            <div class="teacher-content">
+                <div class="teacher-info">
+                    <h3>李老师</h3>
+                    <p><strong>教育背景：</strong>北京师范大学中文系博士，拥有12年高中语文教学经验</p>
+                    <p><strong>教学特色：</strong>注重文学素养的培养，善于引导学生理解文本内涵，提高阅读理解能力和写作水平</p>
+                    <p><strong>教学成果：</strong>所教学生中有多名在高考中语文成绩达到130+，多人获得作文竞赛奖项</p>
+                    <p><strong>教学理念：</strong>语文不仅是一门学科，更是一种文化素养。通过阅读经典，培养学生的人文情怀和审美能力。</p>
+                </div>
+                <div class="teacher-image">
+                    <img src="https://picsum.photos/600/800?random=11" alt="李老师">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成就展示 -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">成就展示</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <img src="https://picsum.photos/400/300?random=23" alt="学生成绩提升">
+                    <div class="achievement-content">
+                        <h3>学生成绩显著提升</h3>
+                        <p>多名学生在辅导后语文成绩提高25分以上，阅读理解和写作能力明显增强</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <img src="https://picsum.photos/400/300?random=24" alt="作文竞赛获奖">
+                    <div class="achievement-content">
+                        <h3>作文竞赛获奖</h3>
+                        <p>辅导学生在全国作文竞赛中获得一、二等奖，展现了优秀的写作能力</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <img src="https://picsum.photos/400/300?random=25" alt="教学成果">
+                    <div class="achievement-content">
+                        <h3>教学成果展示</h3>
+                        <p>通过系统化的语文训练，帮助学生建立完整的语文知识体系和文学素养</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>智慧家教</h2>
+                    <p>专业线上一对一家教服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html#home">首页</a></li>
+                        <li><a href="index.html#about">工作室介绍</a></li>
+                        <li><a href="index.html#services">家教服务</a></li>
+                        <li><a href="index.html#news">家教资讯</a></li>
+                        <li><a href="index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+                        <li><a href="#"><i class="fab fa-qq"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 智慧家教工作室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Untitled-3.js"></script>
+</body>
+</html>
